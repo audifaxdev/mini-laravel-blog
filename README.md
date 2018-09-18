@@ -14,6 +14,8 @@ Build the assets
 
 ```npm i && npm run prod```
 
+Tweak your .env file accordingly, mongodb is required
+
 Serve
 
 ```php artisan serve```
