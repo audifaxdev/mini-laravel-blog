@@ -1,0 +1,78 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+#app {
+  h1, h2, h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+  }
+  article {
+    font-family: 'PT Serif', serif;
+    margin: 0 0 35px 0;
+    h1 {
+      padding: 10px 0;
+    }
+    p {
+      padding: 10px 0;
+      font-size: 1.61rem;
+    }
+    .created-at {
+
+    }
+  }
+}
+
+//
+// Basic Bootstrap table
+//
+
+#backend {
+  cursor: pointer;
+
+  .table-row {
+    display:table-row;
+    cursor: pointer;
+  }
+  .table-cell {
+    display:table-cell;
+  }
+  .table {
+    width: 100%;
+    margin-bottom: $spacer;
+    background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+
+    th,
+    td,
+    .table-cell {
+      padding: $table-cell-padding;
+      vertical-align: top;
+      border-top: $table-border-width solid $table-border-color;
+    }
+
+    thead th {
+      vertical-align: bottom;
+      border-bottom: (2 * $table-border-width) solid $table-border-color;
+    }
+
+    tbody + tbody {
+      border-top: (2 * $table-border-width) solid $table-border-color;
+    }
+
+    .table {
+      background-color: $body-bg;
+    }
+  }
+}
